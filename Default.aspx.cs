@@ -26,7 +26,7 @@ namespace FacebookInstaIntegrate
         string app_secret = "";
         string PageId = "";
         string scope = "";
-        string accessToken = "EAAU89d7UC9UBAJwd6OKftAsG05HeX6vJJIlkK2g2xKUNclbJprzf7PxzLWRnH1NO4n7moFWk1AGWvjgkAoXUHpnclct0mnAm2ia7oAIEV3ra50QMzyZA7ErAsstwvZBYWMt8bDFYo2VR01VVVcImI9kdYRAjZA7jjG1YvjzAkWDRtjuDIfy";
+        string accessToken = ""; //your access token
         public class AccessUser
         {
             public string access_token { get; set; }
@@ -546,7 +546,7 @@ namespace FacebookInstaIntegrate
 
             //string commentname = "";
             //string commentMessage = "";
-            //var client = new FacebookClient("EAAU89d7UC9UBAJwd6OKftAsG05HeX6vJJIlkK2g2xKUNclbJprzf7PxzLWRnH1NO4n7moFWk1AGWvjgkAoXUHpnclct0mnAm2ia7oAIEV3ra50QMzyZA7ErAsstwvZBYWMt8bDFYo2VR01VVVcImI9kdYRAjZA7jjG1YvjzAkWDRtjuDIfy");
+            //var client = new FacebookClient("");//access token
             //string pageId = "102847089502067";
             //string PostId = "";  //102847089502067_123996710705953
             //dynamic posts = client.Get($"{pageId}/posts");
@@ -718,7 +718,7 @@ namespace FacebookInstaIntegrate
                 // string pid = Session["Page_id"] as string;
                 string postId = Session["Post_id"] as string;
                 //string postId = "102847089502067_128385860267038";
-                //string accessToken = "EAAU89d7UC9UBAJwd6OKftAsG05HeX6vJJIlkK2g2xKUNclbJprzf7PxzLWRnH1NO4n7moFWk1AGWvjgkAoXUHpnclct0mnAm2ia7oAIEV3ra50QMzyZA7ErAsstwvZBYWMt8bDFYo2VR01VVVcImI9kdYRAjZA7jjG1YvjzAkWDRtjuDIfy";
+                //string accessToken = ""; //your access token
                 Dictionary<Int32, string> likelist = new Dictionary<Int32, string>();
                 string apiUrl = $"https://graph.facebook.com/v14.0/{postId}?fields=likes&access_token={accessToken1}";
 
